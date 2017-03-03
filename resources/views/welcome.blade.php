@@ -50,11 +50,11 @@
             }
 
             .links > a {
-                display: inline-block;
+                display: block;
                 margin-bottom: 25px;
                 background: black;
                 color: white;
-                padding: 0 25px;
+                padding: 25px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;

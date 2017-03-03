@@ -1,0 +1,108 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+//@import "variables";
+
+// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+@import "neat/neat";
+@import "bourbon/bourbon";
+@import "base/base";
+
+// _Modules
+@import "modules/cards";
+
+body {
+  margin: 0;
+  background: #333;
+}
+
+section {
+  padding: 25px;
+}
+
+#app {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 30px rgba(0,0,0,1);
+  padding-bottom: 100px;
+}
+
+.section-heading {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.chimed {
+  color: #1565c0;
+}
+
+.card-url, .card-url:hover {
+  color: #333;
+}
+
+.global-ui {
+  i {
+    font-size: 42px;
+  }
+}
+
+nav.top {
+  display: none;
+}
+
+nav.bottom {
+  background: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 25px;
+    li {
+      display: inline-block;
+    }
+    a {
+      color: white;
+      font-size: 42px;
+      line-height: 80px;
+      margin: 0 50px;
+    }
+  }
+}
+
+.chime-tools {
+  position: absolute;
+    left: 8px;
+    bottom: 5px;
+}
+
+.card-copy {
+  margin-bottom: 45px;
+  a.settings {
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+  }
+}
+
+.card-copy form {
+  button.chime-btn {
+    background: transparent;
+    color: #999;
+    padding: 0;
+    &:hover {
+      color: #1565c0;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+flatpickr(".datepicker", {
+    enableTime: true
+});

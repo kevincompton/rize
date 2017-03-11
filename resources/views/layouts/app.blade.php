@@ -62,9 +62,9 @@
                     
         </nav>
 
-        <div class="content">
+        <section class="content">
             @yield('content')
-        </div>
+        </section>
 
         <nav class="bottom">
             <ul>

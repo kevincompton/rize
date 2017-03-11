@@ -1,17 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+    <div class="user-image">
+        @if($user->image != null)
+            PHOTO
+            <button>Change Photo</button>
+        @else 
+            <i class="fa fa-user-circle" aria-hidden="true"></i><br>
+            <button>Take A Photo</button>
+        @endif
     </div>
-</div>
+
+    <h2 class="section-heading">{{ $user->name }}</h2>
 @endsection
